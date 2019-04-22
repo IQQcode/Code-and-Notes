@@ -1,0 +1,40 @@
+类的定义
+
+class Person {
+    //属性定义   属性类型，属性方法
+    public String name;
+    public int age;
+
+    //方法定义
+    public void fun() {
+      System.out.println(name + "在" + age + "是屌丝" );
+    } 
+}
+
+对象产生语法
+
+类名称  对象引用 = new 类名称();
+Person per = new Person();
+
+class Person {
+	//属性
+	public String name;
+    public int age;
+
+	//方法
+	public void fun() {
+      System.out.println(name + "在" + age + "是屌丝" );
+    } 
+}
+
+
+public class Class4 {
+	public ststic void main(String[] args) {
+	//对象产生
+	Person per = new Person();
+	
+	per.name = "马QQ";  //调用属性
+    per.fun();        //调用方法
+	}
+}
+

@@ -1,0 +1,67 @@
+super关键字（出现继承）
+
+super---调用父类成员
+this ---调用本类成员
+
+
+一、super调用构造方法
+
+a.当调用子类的无参构造时，系统会自动在子类无参构造前加上super();表示先调用父类的无参构造。super语句可以省略，此时子类可以使用this调用构造方法；
+
+
+b.当父类不存在无参构造时，必须在子类构造方法中加上super(参数)；明确指明调用父类的
+哪个有参构造，此时，super语句不可以省略；
+子类不存在this调用构造方法；
+
+class Person{
+     public void print(){
+         System.out.println("1.I am father");
+    }
+}
+class Student extends Person{
+    public void print(){
+        super.print();  
+        System.out.println("2.I am child");
+    }
+}
+public class Test{
+    public static void main(String[] args) {
+        new Student().print();
+    }
+}
+
+
+二、super调用普通方法
+
+super.方法名(参数)，表示直接从父类中找到同名方法并调用
+
+class Person {
+    public String info = "Fighting";
+    public void print() {
+        System.out.println("1.Person");
+    }
+} 
+
+class Student extends Person {
+    public void print() {
+        
+        //表示调用父类的属性；
+         System.out.println(super.info);
+        
+         //表示调用父类的 print()方法；
+        super.print();
+        System.out.println("2.Student");
+    }
+}
+
+public class Override {
+    public static void main(String[] args) {
+        Student stu = new Student();
+        stu.print();
+    }
+}
+
+
+三、super调用普通属性
+
+super.属性名，表示直接从父类中找到同名属性调用

@@ -1,0 +1,115 @@
+一、包的定义与使用
+写主类之前先定义包
+
+包就是文件夹----在源文件首行  package  包名称;
+
+打包编译命令
+
+***********  javac -d . Test.java    *******************
+-d:根据 package 定义的包名称创建生成目录
+.  ：在当前目录下生成
+
+执行命令
+
+使用全名称：包名.类名
+java www.bit.java.Test1
+
+**自动打包编译命令(将当前路径下所有源文件按照主类的使用情况自动编译)
+
+javac  -d . ./*.java
+
+======ATTENTION 类使用class和public class的区别：
+
+1. public class: 文件名称必须与类名称保持一致，如果希望一个类被其他包访问，则必须定义为public
+class .
+2. class: 文件名称可以与类名称不一致，在一个*.java中可以定义多个class，但是这个类不允许被其他包所访问。
+
+
+
+
+2.包的导入
+
+使用import语句进行包的导入
+
+自动编译：编译器会将当前路径下所有 *.java源文件按照使用顺序进行一次性编译
+
+javac -d . ./*.java
+
+
+3. jar包实际上就是所有class文件的压缩包
+
+cmd切换到当前路径的俩种方式
+I.shift + 右键
+
+
+二.访问控制权限
+ 
+ 1.private(私有访问权限，仅供本类使用)<default(包访问权限)<protected
+ (继承访问权限)<public(公共访问权限)
+
+2.1包访问权限default
+在一个包中的源文件均可以访问
+
+2.2继承访问权限protected
+仅供子类访问
+
+三.单例模式----类的对象有且只有一个
+
+SE：工厂、代理、单例
+
+地球、  国家主席、 太阳
+
+首先控制对象的产生数量 ---将构造方法私有化(从源头控制对象数量)
+
+类构造方法私有化：任何其他类均无法产生此类对象
+
+唯一的对象产生于类内部
+
+唯一的一个属性为静态属性，并且类中提供静态方法取得此对象
+-----<类的外部无法产生对象，因此无法调用对象方法>
+
+三个核心组成：
+构造方法私有化
+
+
+四、java异常
+
+Error类描述java运行时内部错误或资源耗尽错误(OOM,StackOverFlowError)
+
+Exception
+
+--RuntimeException:程序出错
+(ClassCastException类型转换异常，NullPointerException空指针异常，
+NumberFormatException数值转换异常,
+ArrayIndexOutofBoundsException数组越界异常)
+
+--IOException:程序本身没有问题，I/O异常(例如：打开一个不存在的文件)
+
+非受查异常：所有Error以及RuntimeException及其子类，不强制进行异常处理
+
+受查异常：所有其他异常，必须强制用户进行异常处理
+
+4.2 异常处理格式
+
+try {
+
+	//可能出现异常的代码
+
+} [catch......] {
+
+	//出现异常后肿么办
+
+}[finally] {
+
+	//异常出口
+
+}
+
+try-catch(可以有多个catch)
+try-finally
+try-catch(可以有多个catch)-finally
+
+—————finally代码块无论如何都会执行
+保证重点代码一定会被执行
+
+finally代码块无论如何都会执行(若try或catch块中有return 语句，则在return语句执行之前一定会执行finally代码块)
