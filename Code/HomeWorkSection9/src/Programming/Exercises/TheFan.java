@@ -1,14 +1,21 @@
 package Programming.Exercises;
 
 class Fan {
-    static Integer SLOW = 1;
-    static Integer MEDIUM = 2;
-    static Integer FAST = 3;
+    public static final Integer SLOW = 1;
+    public static final Integer MEDIUM = 2;
+    public static final Integer FAST = 3;
 
-    private int speed = SLOW;
-    private boolean on = false;
-    private double radius = 5.0;
-    private String color = "blue";
+    private int speed;
+    private boolean on;
+    private double radius;
+    private String color;
+
+    public Fan() {
+        this.speed = SLOW;
+        this.on = false;
+        this.radius = 5.0;
+        this.color = "blue";
+    }
 
     public int getSpeed() {
         return speed;
@@ -42,13 +49,13 @@ class Fan {
         this.color = color;
     }
 
-    public String toString(int speed, boolean on,String color, double radius) {
-        if(on) {
-            return toString(speed,true,color,radius);
-        }else {
-            return toString(speed,false,color,radius);
-        }
+    public String toString(){
+        if(on)
+            return "Speed:" + speed + "\nColor:" + color + "\nRadius:" + radius;
+        else
+            return "fan is off";
     }
+
 }
 
 public class TheFan {
