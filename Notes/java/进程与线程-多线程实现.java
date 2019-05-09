@@ -22,6 +22,7 @@
                 a. 继承Thread{ } 类；
                 b.Runnable接口实现；
                 c.Callable实现多线程<return - >;
+                d.线程池 -- 推荐;
 
 -*** < run()方法只能由JVM调用，用户调用和普通方法无区别>
      JVM调用start0()方法进行资源的分配与系统调度，准备好资源启动线程后回调run()方法
