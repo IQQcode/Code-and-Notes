@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33086dbf-50be-49bf-a6be-3c5c7efe3e53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Code-Web/CSS-JS01/.project" beforeDir="false" afterPath="$PROJECT_DIR$/../../Code-Web/CSS-JS01/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Code-Web/Class1/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExpermentSectiob11/Class/Experment/MyAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExpermentSectiob11/Class/Experment/MyAccount.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExpermentSectiob11/Class/Experment/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExpermentSectiob11/Class/Experment/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ExpermentSectiob11/Class/Experment/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExpermentSectiob11/Class/Experment/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Class/Experment/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Class/Experment/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWorkSection9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWorkSection9/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Notes/java/Class2" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,18 +24,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Class/Experment/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+            <state relative-caret-position="2061">
+              <caret line="181" column="1" lean-forward="true" selection-start-line="181" selection-start-column="1" selection-end-line="181" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1028#1029#0" expanded="true" />
-                <element signature="e#1061#1062#0" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
-                <element signature="e#1309#1310#0" expanded="true" />
-                <element signature="e#1355#1356#0" expanded="true" />
-                <element signature="e#1403#1404#0" expanded="true" />
+                <element signature="e#1664#1665#0" expanded="true" />
+                <element signature="e#1693#1694#0" expanded="true" />
+                <element signature="e#3365#3366#0" expanded="true" />
+                <element signature="e#3432#3433#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,6 +43,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -54,6 +53,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/Class/Experment/package-info.java" />
         <option value="$PROJECT_DIR$/src/Class/Experment/Test.java" />
       </list>
     </option>
@@ -71,8 +71,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,6 +98,14 @@
               <item name="Class" type="462c0819:PsiDirectoryNode" />
               <item name="Experment" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ExpermentSectiob11" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExpermentSectiob11" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Class" type="462c0819:PsiDirectoryNode" />
+              <item name="Experment" type="462c0819:PsiDirectoryNode" />
+              <item name="Test.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -105,8 +113,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="F:/Learning/JavaSE/Experiment6" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -161,11 +174,15 @@
       <workItem from="1557224033478" duration="453000" />
       <workItem from="1557231875618" duration="772000" />
       <workItem from="1557233144303" duration="93000" />
+      <workItem from="1557402054238" duration="7043000" />
+      <workItem from="1557454363874" duration="157000" />
+      <workItem from="1557454607161" duration="118000" />
+      <workItem from="1557455119322" duration="440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7830000" />
+    <option name="totallyTimeSpent" value="15588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -181,7 +198,7 @@
       <window_info id="Learn" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7317708" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.75390625" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -210,20 +227,17 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Class/Experment/package-info.java" />
     <entry file="file://$PROJECT_DIR$/src/Class/Experment/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+        <state relative-caret-position="2061">
+          <caret line="181" column="1" lean-forward="true" selection-start-line="181" selection-start-column="1" selection-end-line="181" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1309#1310#0" expanded="true" />
-            <element signature="e#1355#1356#0" expanded="true" />
-            <element signature="e#1403#1404#0" expanded="true" />
+            <element signature="e#1664#1665#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
+            <element signature="e#3365#3366#0" expanded="true" />
+            <element signature="e#3432#3433#0" expanded="true" />
           </folding>
         </state>
       </provider>

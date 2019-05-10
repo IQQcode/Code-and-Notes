@@ -2,6 +2,7 @@ package Class.Experment;
 
 import java.util.ArrayList;
 import java.util.Date;
+import java.text.SimpleDateFormat;
 
 class MyAccount {
     private String name;
@@ -66,12 +67,16 @@ class MyAccount {
         return annualInterestRate / 12.0;
     }
 
-    public String getRecord() {
+    /*public String getRecord() {
         String s = null;
         for(int i = 0; i < record.size(); i++) {
             s = s + record.get(i);
         }
         return s;
+    }*/
+
+    public ArrayList<Transaction> getRecord() {
+        return record;
     }
 
     public void withDraw(double money) {
@@ -141,11 +146,20 @@ class Transaction  {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public String toStirng() {
+        return "交易记录 " + description + "\t账户余额为：" + balance;
+    }
 }
 
 public class Test {
     public static void main(String[] args) {
+        Date date = new Date();
+        SimpleDateFormat simpleDateFormat =
+                new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
         MyAccount person = new MyAccount("张三",1234,5000);
+        //能不能改为多线程的存取方式？？？
         person.setAnnualInterestRate(2.25);
         person.withDraw(502.3);
         person.withDraw(100);
@@ -156,8 +170,14 @@ public class Test {
                 + person.getAnnualInterestRate() + "\n账户余额为： " +
                 person.getBalance());
 
-        System.out.println("*** 交易记录： " + person.getRecord());
+        ArrayList<Transaction> personRecode = person.getRecord();
 
+        System.out.println("\n\t\t\t*** 交易记录 *** " );
+
+        for(Transaction description : personRecode) {
+            System.out.println(description.getDescription() +
+                    "\t\t" + simpleDateFormat.format(date));
+        }
     }
 }
 
