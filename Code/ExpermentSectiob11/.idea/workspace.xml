@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33086dbf-50be-49bf-a6be-3c5c7efe3e53" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExpermentSectiob11/Class/Experment/MyAccount.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExpermentSectiob11/Class/Experment/MyAccount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExpermentSectiob11/Class/Experment/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExpermentSectiob11/Class/Experment/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ExpermentSectiob11/Class/Experment/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ExpermentSectiob11/Class/Experment/Transaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Class/Experment/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Class/Experment/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HomeWorkSection9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HomeWorkSection9/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,12 +19,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Class/Experment/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2061">
-              <caret line="181" column="1" lean-forward="true" selection-start-line="181" selection-start-column="1" selection-end-line="181" selection-end-column="1" />
+            <state relative-caret-position="5520">
+              <caret line="176" column="22" selection-start-line="176" selection-start-column="22" selection-end-line="176" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1664#1665#0" expanded="true" />
-                <element signature="e#1693#1694#0" expanded="true" />
                 <element signature="e#3365#3366#0" expanded="true" />
                 <element signature="e#3432#3433#0" expanded="true" />
               </folding>
@@ -71,8 +64,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -110,6 +101,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,11 +171,12 @@
       <workItem from="1557454363874" duration="157000" />
       <workItem from="1557454607161" duration="118000" />
       <workItem from="1557455119322" duration="440000" />
+      <workItem from="1557499373765" duration="289000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15588000" />
+    <option name="totallyTimeSpent" value="15877000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
@@ -230,12 +224,10 @@
     <entry file="file://$PROJECT_DIR$/src/Class/Experment/package-info.java" />
     <entry file="file://$PROJECT_DIR$/src/Class/Experment/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2061">
-          <caret line="181" column="1" lean-forward="true" selection-start-line="181" selection-start-column="1" selection-end-line="181" selection-end-column="1" />
+        <state relative-caret-position="5520">
+          <caret line="176" column="22" selection-start-line="176" selection-start-column="22" selection-end-line="176" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1664#1665#0" expanded="true" />
-            <element signature="e#1693#1694#0" expanded="true" />
             <element signature="e#3365#3366#0" expanded="true" />
             <element signature="e#3432#3433#0" expanded="true" />
           </folding>
