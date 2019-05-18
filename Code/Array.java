@@ -81,7 +81,7 @@
 
 
 /** JAVA 对数组的支持 */
-public class Array{
+public class Array {
 
     //********排序支持**********"java.util.Arrays.sort(数组名)；"
     // public static void main(String[] args){
