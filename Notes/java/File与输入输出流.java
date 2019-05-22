@@ -60,13 +60,13 @@ Reader,Writer
 1).取得终端对象
 2).根据终端对象取得输入输出流
 3).根据输入输出流进行数据的读取与写入
-4).关闭流(I/O操作属于资源处理，所有的资源处理[IO操作、数据库操作、网络操作]
-在使用后一定要关闭)
+4).关闭流(I/O操作属于资源处理，所有的资源处理[IO操作、数据库操作、网络操作]在使用后一定要关闭 )
+
             -----JDK1.7追加了AutoCloseble[自动关闭接口]，此接口必须使用try-catch代码块
 
 
 1.字节的输出流 OutputStream
-    public abstract class OutputStream implements Cloneable,Flushable
+    public abstract class OutputStream implements Cloneable,Flushable//抽象类，使用时必须先实例化子类
 
 核心方法：
 

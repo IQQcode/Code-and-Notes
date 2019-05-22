@@ -1,11 +1,11 @@
 package ClassHomeWork.section13_6_7;
 
-class Circle {
+class MyCircle {
     private double radius = 1.0;
-    public Circle(){
+    public MyCircle(){
         radius = 1.0;
     }
-    public Circle(double radius){
+    public MyCircle(double radius){
         this.radius = radius;
     }
 
@@ -18,7 +18,7 @@ class Circle {
     }
 }
 
-class ComparableCircle extends Circle implements Comparable<ComparableCircle> {
+class ComparableCircle extends MyCircle implements Comparable<ComparableCircle> {
     public ComparableCircle() {
         super();
     }
