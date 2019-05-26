@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f77f84d4-585a-4f14-874f-b2a8bbffb985" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Code/Array.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/Array.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Code/DisplayRandomNumber/.idea/DisplayRandomNumber.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Code/DisplayRandomNumber/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Code/DisplayRandomNumber/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Code/DisplayRandomNumber/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Code/DisplayRandomNumber/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Code/DisplayRandomNumber/CircleWithException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Code/DisplayRandomNumber/DisplayRandomNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Code/ClassHomeWorkSection10_3_4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Code/ClassHomeWorkSection10_3_4/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,6 +12,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="85" />
@@ -32,8 +28,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Code-Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Code-Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Code-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="网页计算器" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -65,11 +76,12 @@
       <updated>1553774694626</updated>
       <workItem from="1553774698411" duration="56000" />
       <workItem from="1558108016613" duration="21000" />
+      <workItem from="1558861198176" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77000" />
+    <option name="totallyTimeSpent" value="91000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="68" y="20" width="1400" height="824" extended-state="0" />
