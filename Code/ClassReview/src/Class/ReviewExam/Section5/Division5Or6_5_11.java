@@ -8,7 +8,7 @@ public class Division5Or6_5_11 {
             if(i % 5 == 0 && i % 6 !=0 ) {
                 if(count % 10 == 0)
                     System.out.println();
-                System.out.print( i + "、");
+                System.out.print( i + " ");
                 count++;
             }
         }
@@ -18,7 +18,7 @@ public class Division5Or6_5_11 {
             if(i % 5 != 0 && i % 6 == 0) {
                 if(count % 10 == 0)
                     System.out.println();
-                System.out.print( i + "、");
+                System.out.print( i + " ");
                 count++;
             }
         }
