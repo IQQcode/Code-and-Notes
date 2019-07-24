@@ -23,14 +23,14 @@ Map:
 
 ********************  ArrayList 与 Vector区别  *************************
 
-1. 历史时间:ArrayList是从JDK1.2提供的，而Vector是从JDK1.0就提供了。
+1. 历史时间:ArrayList是从 JDK1.2提供的，而Vector是从 JDK1.0就提供了。
 
 2.初始化策略区别：
   Vector在无参构造时执行后将对象数组大小初始化为10
   ArrayList采用懒加载策略，在构造方法阶段并不初始化对象数组，
   在第一次添加元素时才初始化对象数组大小为10
 
-3.ArrayList扩容时，新数组大小为原数组的1.5倍；
+3.ArrayList扩容时，新数组大小为原数组的1.5倍
   Vectork扩容时，新数组大小为原数组的2倍
 
 4. 线程安全：ArrayList是异步处理， 非线程安全，性能更高；
@@ -38,15 +38,17 @@ Map:
 
 5.遍历区别：
                                                   
-输出形式：ArrayList支持Iterator、ListIterator、foreach；
-         Vector   支持Iterator、ListIterator、foreach、Enumeration。
+输出形式：ArrayList 支持 Iterator、ListIterator、foreach；
+         Vector    支持 Iterator、ListIterator、foreach、Enumeration。
 
 
 
 
  **** ArrayList 与 LinkedList区别 :
 
-    LinkedList底层采用双向链表实现，ArrayList底层采用数组实现，Vector 底层采用数组实现
+    LinkedList 底层采用双向链表实现
+    ArrayList 底层采用数组实现
+    Vector  底层采用数组实现
 
 
 
@@ -61,6 +63,10 @@ Map:
 
         ---实现了Comparable接口的类可以直接存放在TreeSet或TreeMap中
 
+**** 使用场景：****
+
+         在频繁查找以及尾部的插入与删除用 ArrayList
+         频繁在任意位置进行元素插入与删除使用 LinkedList
 
 
 
