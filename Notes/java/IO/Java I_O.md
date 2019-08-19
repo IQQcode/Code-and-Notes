@@ -473,9 +473,8 @@ public class LowerToUpper {
 }
 ```
 我们可以看到，将 iqqcode 装换为了 IQQCODE
-
-再次，[贴上我的Github链接](https://github.com/IQQcode)，那个叫 IQQcode的靓仔就是我....
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190819164048407.png)
+
 ### 7. 打印流
 打印流解决的就是OutputStream的设计缺陷，属于OutputStream功能的加强版。如果操作的不是二
 进制数据，只是想通过程序向终端目标输出信息的话，OutputStream不是很方便，其缺点有两个：
