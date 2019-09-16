@@ -1,4 +1,3 @@
-
 # enumerate Demo
 #每一个下标和对应元素形成一个元组
 '''
@@ -39,7 +38,7 @@ if salary.isdigit():
                     print("Your account [%s] is not enough..." %salary)
             else :
                 print("goods [%s] is not exist!!!" %userChoice)
-        elif userChoice =='Q':
+        elif userChoice == 'Q':
             print("-----------     Shop List     -----------")
             for i in shopping_List :
                 print(i)
