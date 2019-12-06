@@ -4,6 +4,11 @@
 
 from PIL import Image
 import numpy as np
+
+# 将原图像转换为灰度图像,并将其像素值放入列表并转存到数组中
+# asarray() 转换输入为数组array
+# convert() 将图像转换为灰色图像
+# astype() 转换数据类型
 out1 = np.asarray(Image.open("F:/Code-and-Notes/Python/Pure Python/Basic Grammar/Sketch Image/img/Tiger.jpg").convert('L')).astype('float')
 depth = 10
 grad = np.gradient(out1)
