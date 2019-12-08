@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单标签</title>
+</head>
+<body>
+    <!-- form用来定义表单,定义一个范围,代表用户采集的数据 -->
+
+         <!-- 属性:
+            action: 指定数据提交的URL
+            method: 指定提交方式分类：一共7种，2种比较常用
+                    get: 
+                        1. 请求参数会在地址栏中显示
+                        2.请求参数大小有限制
+                        3.不安全(地址栏可以看到)
+                    post:
+                        1.请求参数不会再地址栏中显示,会封装在请求体中
+                        2.请求参数大小无限制
+                        3.较为安全
+                     -->
+
+         <!-- 表单项中的数据要想被提交：必须指定其name属性 -->
+         <form action="#" method="GET">
+             <label for="username">用户名:</label><input type="text" name="username" placeholder="请输入用户名" id="username"><br>
+             密码: <input type="password" name="password" placeholder="密码"><br>
+             性别: <input type="radio" name="gender" value="male" checked> 男
+                  <input type="radio" name="gender" value="female"> 女 <br> 
+             爱好: <input type="checkbox" name="hobby" value="sing"> 唱
+                  <input type="checkbox" name="hobby" value="rap"> 跳
+                  <input type="checkbox" name="hobby" value="Java" checked> java
+                  <input type="checkbox" name="hobby" value="sleeping"> 睡觉
+                  <br>
+             <input type="submit" value="登录">
+         </form>
+</body>
+</html>
