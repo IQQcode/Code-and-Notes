@@ -25,15 +25,44 @@
          <!-- 表单项中的数据要想被提交：必须指定其name属性 -->
          <form action="#" method="GET">
              <label for="username">用户名:</label><input type="text" name="username" placeholder="请输入用户名" id="username"><br>
-             密码: <input type="password" name="password" placeholder="密码"><br>
-             性别: <input type="radio" name="gender" value="male" checked> 男
+            密码:  <input type="password" name="password" placeholder="密码"><br>
+            性别:  <input type="radio" name="gender" value="male" checked> 男
                   <input type="radio" name="gender" value="female"> 女 <br> 
-             爱好: <input type="checkbox" name="hobby" value="sing"> 唱
+            爱好:  <input type="checkbox" name="hobby" value="sing"> 唱
                   <input type="checkbox" name="hobby" value="rap"> 跳
                   <input type="checkbox" name="hobby" value="Java" checked> java
-                  <input type="checkbox" name="hobby" value="sleeping"> 睡觉
+                  <input type="checkbox" name="hobby" value="sleeping"> 睡觉 <br>
+
+            生日: <input type="date" name="birthday"><br>
+            生日: <input type="datetime-local" name="birthday"><br>
+
+            E-mail: <input type="email" name="email"><br>
+
+            年龄: <input type="number" name="age"><br>
+            电话: <input type="tel" name="telephone"><br>
+
+            省份: <select name="province" id="">
+                <option value="">--请选择--</option>
+                <option value="1">陕西</option>
+                <option value="2">内蒙古</option>
+                <option value="3">上海</option>
+            </select><br>
+
+            自我描述: <br><textarea name="dricrip" id="" cols="30" rows="10"></textarea><br>
+
+
+            image: <input type="file" name="file"><br>
+
+            取色器： <input type="color" name="color"><br>
+
+            隐藏域： <input type="hidden" name="id" value="Mr.Q">
                   <br>
-             <input type="submit" value="登录">
+             <input type="submit" value="登录"><br><br>
+             <input type="button" value="一个按钮"><br>
+             <input type="image" value="QQ登录 "src="../image/登录.png">
+
+             <br><br>
+
          </form>
 </body>
 </html>
