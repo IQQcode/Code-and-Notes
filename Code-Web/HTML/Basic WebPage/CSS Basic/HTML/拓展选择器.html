@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拓展选择器</title>
+    <style>
+        /* 子选择器，控制的是p标签中的内容 */
+        div p{
+            color :blueviolet;
+        } 
+
+        /* 父选择器,控制的是div标签的内容 */
+        div > p {
+            border:1px solid;
+        }
+
+        /* 属性选择器 */
+        input[type='text'] {
+            border: 2px solid;
+        }
+
+        /* 伪类选择器 */
+        a:link {
+            color : pink;
+        }
+        /* 鼠标悬浮 */
+        a:hover {
+        color : green;
+        }
+
+        /* 鼠标点击 */
+        a:active {
+        color : red;
+        }
+        /* 鼠标访问之后 */
+        a:visited {
+        color : orange;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 1.* 选择所有元素 -->
+    
+    <!-- 2.并集选择器 -->
+
+    <!-- 3.子选择器 -->
+    <div>
+        <p>子类选择器</p>
+        <h5>子类选择器</h5>
+    </div>
+    <p>子类选择器</p>
+
+    <!-- 4.父选择器 -->
+    <div>父选择器</div>
+
+    <!-- 5.属性选择器 -->
+    <input type="text">
+    <input type="password">
+
+    <!-- 6.伪类选择器 -->
+    <br><br><br><a href="#">https://www.baidu.com</a>
+
+
+</body>
+</html>
