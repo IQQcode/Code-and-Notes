@@ -22,10 +22,10 @@ uni_x = grad_x / A
 uni_y = grad_y / A
 uni_z = 1. / A
 
-vec_el = np.pi / 2.2  # 光源的俯视角度，弧度值
-vec_az = np.pi / 4.  # 光源的方位角度，弧度值
-dx = np.cos(vec_el) * np.cos(vec_az)  # 光源对x 轴的影响
-dy = np.cos(vec_el) * np.sin(vec_az)  # 光源对y 轴的影响
+vec_el = np.pi / 2.2  # 光源的俯视角度,弧度值
+vec_az = np.pi / 4.  # 光源的方位角度,弧度值
+dx = np.cos(vec_el) * np.cos(vec_az)  # 光源对 x轴的影响
+dy = np.cos(vec_el) * np.sin(vec_az)  # 光源对 y轴的影响
 dz = np.sin(vec_el)  # 光源对z 轴的影响
 
 b = 255 * (dx * uni_x + dy * uni_y + dz * uni_z)  # 光源归一化
