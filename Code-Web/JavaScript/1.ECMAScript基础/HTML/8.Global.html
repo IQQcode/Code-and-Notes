@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Global</title>
+    <script>
+        /*
+        Global
+            1.特点：全局对象，Global中封装的方法不需要对象就可以直接调用。
+                    方法名();
+            2.方法：
+                    encodeURI(): url编码
+                    decodeURI(): url解码
+
+                    encodeURIComponent(): url编码,编码的字符更多
+                    decodeURIComponent(): url解码
+
+
+                    parseInt(): 将字符串转为数字
+                    * 逐一判断每一个字符是否为数字,直到不是数字为止,将前边数字部分转为number
+
+                    isNaN(): 判断值是否为NaN
+                    * == 为 false
+
+                    eval(): 将JS字符串解析为脚本代码来执行
+
+            3.URL编码
+                    数字媒体技术 = %E6%95%B0%E5%AD%97%E5%AA%92%E4%BD%93
+        */
+
+        var str = "数字媒体";
+        var encode = encodeURI(str);
+        document.write(encode + "<br>");//%E6%95%B0%E5%AD%97%E5%AA%92%E4%BD%93
+        var s = decodeURI(encode);
+        document.write(s + "<br>");//数字媒体技术
+
+
+        var str1 = "http://www.baidu.com?wd=数字媒体";
+        var encode1 = encodeURIComponent(str1);
+        document.write(encode1 + "<br>");//%E6%95%B0%E5%AD%97%E5%AA%92%E4%BD%93
+        var s1 = decodeURIComponent(encode1);
+        document.write(s1 + "<br>");//数字媒体技术
+
+        var str = "123abc";
+        var result = parseInt(str);
+        document.write(result);
+
+        var a = NaN;
+        document.write("<br>" + isNaN(a));
+
+        var msg = "alert(123)";
+        eval(msg);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
