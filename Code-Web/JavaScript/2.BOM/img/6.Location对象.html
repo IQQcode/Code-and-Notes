@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //reload()方法，定义按钮，点击按钮来刷新当前页面
+
+        //获取按钮
+        var but = document.getElementById("loc");
+        //绑定点击事件
+        but.onclick = function() {
+            //刷新页面
+            location.reload();
+        } 
+    </script>
+</head>
+<body>
+    <input type="button" id="loc" value="刷新">
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Open-Close Windows</title>
+</head>
+<body>
+        <!-- ***一、与打开关闭窗口的方法*** -->
+
+        <!-- open -->
+        <input id="openW" type="button" value="打开窗口">
+        <input id="closeW" type="button" value="关闭窗口">
+
+        <script>
+            var openW = document.getElementById("openW");
+            var newWindow;
+            openW.onclick = function() {
+                //打开指定新窗口
+                newWindow = open("https://www.baidu.com");
+            }
+
+            var closeW = document.getElementById("closeW");
+                closeW.onclick = function () {
+                    //关闭当前窗口
+                    newWindow.close("https://www.baidu.com");
+                }
+        </script>
+</body>
+</html>

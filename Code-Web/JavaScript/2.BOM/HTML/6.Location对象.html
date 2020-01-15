@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="but" value="刷新">
+
+    <input type="button" id="TODO" value="TODO">
+    <script>
+        //reload(),定义一个按钮，点击按钮刷新当前页面
+
+        //1.获取按钮
+        var but = document.getElementById("but");
+        //2.绑定点击事件
+        but.onclick = function() {
+            //刷新页面
+            location.reload();
+        }
+
+        //获取href
+        var href = location.href;
+
+        //点击按钮访问百度
+
+        //获取按钮
+        var TODO = document.getElementById("TODO");
+        //绑定点击事件
+        TODO.onclick = function() {
+            //访问网页
+            location.href = "https://baidu.com";
+        }
+    </script>
+</body>
+</html>

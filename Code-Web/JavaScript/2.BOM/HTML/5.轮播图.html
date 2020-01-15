@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轮播图</title>
+</head>
+<body>
+    <!-- 分析：
+        1.在页面上使用img标签展示图片
+        2.定义一个方法，修改图片对象的src属性
+        3.定义一个定时器，每隔3秒调用方法一次。
+    -->
+    <!-- alt 属性是一个必需的属性，它规定在图像无法显示时的替代文本。 -->
+
+    <img id="img" src="../img/pc_1.jpg" width="100%" alt="轮播图">
+
+    <script>
+        //1.修改图片src
+        var temp = 1;
+        function fun() {
+            temp++;
+            //判断temp是否大于3
+            if (temp > 4) {
+                temp = 1;
+            }
+            //获取img对象
+            var img = document.getElementById("img");
+            img.src = "../img/pc_" + temp + ".jpg";
+        }
+
+        //2.定义定时器
+        setInterval(fun, 3000);
+    </script>
+</body>
+</html>

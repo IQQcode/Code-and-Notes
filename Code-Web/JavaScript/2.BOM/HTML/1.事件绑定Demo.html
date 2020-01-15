@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>事件绑定</title>
+</head>
+<body>
+
+    <!-- 点击切换图片 -->
+
+    <img id="msg" src="../img/1.gif">
+    <script>
+        var msg = document.getElementById("msg");
+
+        var flag = false;
+        msg.onclick = function() {
+            if(flag) {
+                msg.src = "../img/2.gif";
+                flag = false;
+            }else {
+                msg.src = "../img/1.gif";
+                flag = true;
+            }
+        }
+    </script>
+</body>
+</html>
