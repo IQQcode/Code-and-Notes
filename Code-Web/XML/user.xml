@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<users>
+    <user id='1'>
+        <name>zhangsan</name>
+        <age>23</age>
+        <gerder>male</gerder>
+    </user>
+
+    <user id='2'>
+        <name>zhangsan</name>
+        <age>23</age>
+        <gerder>female</gerder>
+    </user>
+</users>
