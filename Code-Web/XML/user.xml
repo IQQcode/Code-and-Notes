@@ -10,5 +10,13 @@
         <name>zhangsan</name>
         <age>23</age>
         <gerder>female</gerder>
+        <code>
+            <!-- if(a< b && a>c) -->
+            if(a &lt; b &amp;&amp;  a &gt; c) { }
+
+            <![CDATA[
+                if(a < b && a > c) { }
+            ]]]>
+        </code>
     </user>
 </users>
