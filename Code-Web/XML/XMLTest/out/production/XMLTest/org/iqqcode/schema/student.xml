@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!--
+        1.填写xm1文档的根元素
+        2.引入xsi前缀.xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        3.引入xsd文件命名空间.xsi:schemalocation="http://www.itcast.cn/xml student.xsd"
+        4.为每一个xsd约束声明一个前缀，作为标识xmlns="http://www.itcast.cn/xml"
+     -->
+<students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="https://github.com/IQQcode"
+          xsi:schemaLocation="https://github.com/IQQcode student.xsd">
+    <student number="IQQCode_0001">
+        <name>Mr.Q</name>
+        <age>120</age>
+        <sex>male</sex>
+    </student>
+
+    <student number="IQQCode_0002">
+        <name>IQQcode</name>
+        <age>120</age>
+        <sex>female</sex>
+    </student>
+</students>
