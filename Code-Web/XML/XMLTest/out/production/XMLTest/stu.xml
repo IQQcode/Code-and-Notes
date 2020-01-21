@@ -1,12 +1,12 @@
 <?xml version="1.0"encoding="UTF-8"?>
 <students>
-    <student number="heima_00e1">
-        <name>tom</name>
+    <student number="001">
+        <name id="xml01">tom</name>
         <age>18</age>
         <sex>male</sex>
     </student>
-    <student number="heima_0002">
-        <name>jack</name>
+    <student number="002">
+        <name id="xml02">jack</name>
         <age>18</age>
         <sex>female</sex>
     </student>
