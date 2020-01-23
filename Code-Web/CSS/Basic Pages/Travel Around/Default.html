@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Tik Tok</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="assets/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <style>
+        /* 响应式布局 */
+
+        @media (max-width: 768px) {
+
+            .summary {
+                padding-right: 3px;
+                padding-left: 3px;
+            }
+
+            .carousel {
+                height: 300px;
+                margin-bottom: 30px;
+            }
+
+            .carousel .item {
+                height: 300px;
+            }
+
+            .carousel img {
+                min-height: 300px;
+            }
+
+            .carousel-caption p {
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            .feature-heading {
+                font-size: 34px;
+            }
+
+            .feature-heading .text-muted {
+                font-size: 22px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .feature-heading {
+                margin-top: 120px;
+            }
+        }
+
+        /* 涟漪 */
+        section {
+            /* background-image:; */
+            background-size: cover;
+            height: 100vh;
+            z-index: 100 !important;
+        }
+
+        #carousel-example-generic {
+            position: absolute;
+            top: 50px;
+            left: 0px;
+        }
+
+        #carousel-example-generic .left {
+            z-index: 1000 !important;
+        }
+
+        #carousel-example-generic .right {
+            z-index: 1000 !important;
+        }
+
+        #carousel-example-generic .zi {
+            z-index: 1000 !important;
+        }
+
+        .col-md-4 img:hover {
+            transform: scale(1.2);
+            transition: 0.4s ease;
+        }
+
+        .col-md-5 img:hover {
+            transform: scale(1.1);
+            transition: 0.4s ease;
+        }
+
+        #bobo {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部导航 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Tik Tok</a>
+            </div>
+            <div class="collapse navbar-collapse" id="demo-navbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Blog <span class="sr-only">(current)</span></a></li>
+                    <li><a href="article.html">Article</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Scenery <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#tab-chrome" data-tab="tab-chrome">Paris</a></li>
+                            <li><a href="#tab-firefox" data-tab="tab-firefox">London</a></li>
+                            <li><a href="#tab-safari" data-tab="tab-safari">Egypt</a></li>
+                            <li><a href="#tab-opera" data-tab="tab-opera">Budapest</a></li>
+                            <li><a href="#tab-ie" data-tab="tab-ie">Chengdu</a></li>
+                            <li><a href="#tab-xz" data-tab="tab-xz">Xian</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" data-toggle="modal" data-target="#about">About</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- 水波涟漪 -->
+    <section></section>
+
+    <!-- 轮播图 -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="assets/images/b1.jpg" alt="巴黎">
+                <div class="carousel-caption">
+                    <h3>First slide label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/b2.jpg" alt="伦敦">
+                <div class="carousel-caption">
+                    <h3>First slide label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/images/b3.jpg" alt="埃及">
+                <div class="carousel-caption">
+                    <h3>First slide label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <br><br><br><br><br>
+
+    <!-- 三栏布局 -->
+    <div class="container">
+        <div class="row" id="summary-container">
+            <div class="col-md-4">
+                <img src="assets/images/机器猫啊.png" alt="chrome">
+                <h2>机器猫</h2>
+                <p>哆啦A梦，来自未来世界（22世纪）的蓝色猫型机器人，身上的四次元百宝袋装有许多道具，为改变大雄的命运而来。</p>
+                <p><a class="btn btn-default" href="#" role="button">点击查看</a></p>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/大白啊.png" alt="firefox">
+    
+                <h2>大白</h2>
+    
+                <p>大白，是电影《超能陆战队》及动画《大白归来》中登场的虚拟人物，是一个体型胖嘟嘟的充气型智能机器人，因呆萌的外表和善良的本质获得大家的喜爱，被称为“萌神”、“守护性暖男”。</p>
+    
+                <p><a class="btn btn-default" href="#" role="button">点击查看</a></p>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/玛丽踢球.png" alt="safari">
+    
+                <h2>超级玛丽</h2>
+    
+                <p>马里奥是站在游戏界顶峰的超人气多面角色。马里奥靠吃蘑菇成长，特征是大鼻子、头戴帽子、身穿背带裤，还留着胡子。</p>
+    
+                <p><a class="btn btn-default" href="#" role="button">点击查看</a></p>
+    
+            </div>
+    </div>
+
+    <!-- 水平线 -->
+    <hr class="divider">
+
+    <!-- 标签页 -->
+    <ul class="nav nav-tabs" role="tablist" id="tab-list">
+        <li role="presentation" class="active"><a href="#tab-chrome" aria-controls="home" role="tab"
+                data-toggle="tab">超级玛丽</a></li>
+        <li role="presentation"><a href="#tab-firefox" aria-controls="profile" role="tab" data-toggle="tab">可爱的大白</a>
+        </li>
+        <li role="presentation"><a href="#tab-safari" aria-controls="messages" role="tab" data-toggle="tab">阿童木</a>
+        </li>
+        <li role="presentation"><a href="#tab-opera" aria-controls="settings" role="tab" data-toggle="tab">萌萌的小黄</a>
+        </li>
+        <li role="presentation"><a href="#tab-ie" aria-controls="settings" role="tab" data-toggle="tab">机器猫啊</a>
+        </li>
+        <li role="presentation"><a href="#tab-xz" aria-controls="settings" role="tab" data-toggle="tab">仙子天上来</a>
+        </li>
+    </ul>
+
+    <!-- 标签页下面的内容 -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="tab-chrome">
+            <div class="row feature">
+                <div class="col-md-7">
+                    <h2 class="feature-heading">超级玛丽 <span class="text-muted">童年的乐趣</span></h2>
+                    <p class="lead">超级玛丽，全名"超级马里奥兄弟"，是任天堂公司出品的著名横版游戏。最早在红白机上推出，有多款后续作品，迄今多个版本合共销量已突破4000万套。
+                        其中的主角马里奥、路易、碧琪公主、奇诺比奥等等已成为任天堂的招牌人物。马里奥是站在游戏界顶峰的超人气多面角色。
+                        马里奥靠吃蘑菇成长，特征是大鼻子、头戴帽子、身穿背带裤，还留着胡子。
+                        与他的双胞胎兄弟路易基一起，长年担任任天堂的招牌角色。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="assets/images/玛丽头.png" alt="Chrome">
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab-firefox">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="assets/images/大白超人.jpg" alt="Firefox">
+                </div>
+                <div class="col-md-7">
+    
+                    <h2 class="feature-heading">大白 <span class="text-muted">也有一颗超人的心</span>
+                    </h2>
+    
+                    <p class="lead">
+                        大白，是电影《超能陆战队》及动画《大白归来》中登场的虚拟人物，是一个体型胖嘟嘟的充气型智能机器人，因呆萌的外表和善良的本质获得大家的喜爱，被称为“萌神”、“守护性暖男”。大白是主角小宏的哥哥研发的“私人健康顾问”，也就是一个智能机器人，与其他机器人与众不同的是，它是一个充气机器人。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab-safari">
+            <div class="row feature">
+                <div class="col-md-7">
+    
+                    <h2 class="feature-heading">阿童木 <span class="text-muted">童年小英雄阿童木</span></h2>
+    
+                    <p class="lead">阿童木一直以为自己的名字是天马杜比，是大都会最出色的科学家天马博士的十三岁儿子。其实，他是一个最先进的机械人，
+                        是博士依照其于实验室意外身亡的爱儿外貌及性格创造。由于阿童木无法满足博士的期望，因此惨遭博士遗弃。
+                        阿童木不仅无法接受父亲不再爱自己，更要承受自己不是人类的可怕事实。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="assets/images/阿童木.png" alt="Safari">
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab-opera">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="assets/images/墙里.jpg" alt="Opera">
+                </div>
+                <div class="col-md-7">
+    
+                    <h2 class="feature-heading">小黄人 <span class="text-muted">呆萌又可爱</span>
+                    </h2>
+    
+                    <p class="lead">
+                        《小黄人》围绕小黄人们的“前格鲁时代”展开叙述，并特别追溯了小黄人的起源。小黄人总是忠诚地为主人提供各种服务，兢兢业业，毫无怨言，直到它们失手“害死”每一任主人。在痛苦地失去一个又一个主人后，被困在冰洞之内小黄人们愈发焦躁不安，
+                        他们决定挺身而出，去到花花世界，再次寻找可以效劳的主人。</p>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab-ie">
+            <div class="row feature">
+                <div class="col-md-7">
+    
+                    <h2 class="feature-heading">哆啦A梦 <span class="text-muted">多少人童年的梦想</span></h2>
+    
+                    <p class="lead">
+                        哆啦A梦，来自未来世界（22世纪）的蓝色猫型机器人，身上的四次元百宝袋装有许多道具，为改变大雄的命运而来。因为失去原生的耳朵（电视动画设定被真正的老鼠咬掉，《2112年哆啦A梦的诞生》设定被机械鼠咬掉），
+                        常被人以为是蓝色的狸猫而引起不满。弱点为害怕老鼠，喜欢吃铜锣烧饼。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="assets/images/机器猫.jpg" alt="IE">
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab-xz">
+            <div class="row feature">
+                <div class="col-md-4">
+                    <video src="assets/video/1.mp4" autoplay width="100%" height="300" controls style="outline: none;"></video>
+                </div>
+                <div class="col-md-4">
+                    <video src="assets/video/2.mp4" autoplay width="100%" height="300" controls style="outline: none;"></video>
+                </div>
+                <div class="col-md-4">
+                    <video src="assets/video/3.mp4" autoplay width="100%" height="300" controls style="outline: none;"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 水平线 -->
+    <hr class="divider">
+
+    <!-- 页脚 -->
+    <footer>
+        <p class="pull-right"><a href="#top">回到顶部</a></p>
+        <p class="pull-left">© Mr.Q</p>
+        <p class="col-md-offset-5" style="font-size: 20px;">这是一个华丽的底部</p>
+        <!-- <p ></p> -->
+    </footer>
+    </div>
+    <div id="bobo"></div>
+
+    <!-- 关于模态框 -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="about">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">About</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Mr.Q is a selfless sharing, sunshine handsome contemporary good youth.</p>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/images/Blog.png" alt="" width="100%">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">HandClap</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</body>
+</html>
+
+<script src="assets/js/jquery-3.4.1.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/jquery.ripples-min.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/raindrops.js"></script>
+<script src="assets/js/highlight.min.js"></script>
+<script>
+    $("#demo-navbar .dropdown-menu a").click(function () {
+        var href = $(this).attr('href');
+        $("#tab-list a[href = '" + href + "']").tab('show');
+    })
+    // 设置涟漪效果使用方法非常简单 只需要引入jq库 然后在使用选择器选择要渲染的标签获得jQuery对象后使用ripples方法，下面三个参数自己试验就可以实现涟漪的效果了.例如
+    $('section').ripples({
+        //imageUrl: null,   //要用作背景的图像的URL。如果没有，插件将尝试使用计算的background-imageCSS属性的值。也接受数据URI。
+        dropRadius: 10, //通过在画布上单击或移动鼠标而产生的拖放的大小（以像素为单位）。
+        perturbance: 0.04, //基本上由波纹引起的折射量。0表示没有折射。
+        resolution: 512, //要呈现的WebGL纹理的宽度和高度。此值越大，渲染越平滑，涟漪传播越慢。
+        //interactive: true,//鼠标点击和鼠标移动是否会触发效果。
+        //crossOrigin: "",  //用于受影响图像的crossOrigin属性。
+    });
+    // 设置页脚特效
+    jQuery('#bobo').raindrops({
+        color: '#a5d2da',
+        canvasHeight: 80,
+        waveHeight: 300,
+    });
+</script>
