@@ -6,6 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        body {
+            background: url('images/name.png');
+            /* 不重复 */
+            background-repeat: no-repeat;
+            /* 背景铺满 */
+            background-size: 100% auto;
+        }
+    </style>
 </head>
 <body>
     <div id="login-box">
@@ -13,12 +23,12 @@
         <!-- 输入框 -->
         <div class="form">
             <div class="item">
-                <i></i>
-                <input type="text" placeholder="username">
+                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                <input type="text" placeholder="Username">
             </div>
             <div class="item">
-                <i></i>
-                <input type="text" placeholder="password">
+                <i class="fa fa-key" aria-hidden="true"></i>
+                <input type="text" placeholder="Password">
             </div>
         </div>
         <button>Login</button>
