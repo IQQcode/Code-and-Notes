@@ -1,0 +1,24 @@
+#login-box {
+    width: 30%;
+    height: 300px;
+    /* 居中 */
+    margin: 0 auto;
+    /* 中央位置 */
+    margin-top: 15%;
+    /* 内容居中 */
+    text-align: center;
+    background: #00000060;
+    padding: 20px 50px;
+}
+
+/* 调整Input输入框 */
+#login-box .form {
+    margin-top: 50px;
+}
+
+/* input border */
+#login-box .form .item input {
+    border: 0;
+    border-bottom: 2px solid #000;
+    padding: 8px 10px;
+}
