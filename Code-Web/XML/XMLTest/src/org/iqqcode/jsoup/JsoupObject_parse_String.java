@@ -32,6 +32,7 @@ public class JsoupObject_parse_String {
                 "\t</student>\n"+
                 "\n"+
                 "</students>";
+        //获取元素对象
         Document document = Jsoup.parse(str);
         System.out.println(document);
     }

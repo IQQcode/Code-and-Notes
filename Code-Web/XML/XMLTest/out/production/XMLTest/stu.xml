@@ -1,12 +1,12 @@
 <?xml version="1.0"encoding="UTF-8"?>
 <students>
     <student number="001">
-        <name id="xml01">tom</name>
+        <name id="xml01">Tom</name>
         <age>18</age>
         <sex>male</sex>
     </student>
     <student number="002">
-        <name id="xml02">jack</name>
+        <name id="xml02">Jack</name>
         <age>18</age>
         <sex>female</sex>
     </student>
