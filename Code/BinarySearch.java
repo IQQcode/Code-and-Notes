@@ -1,7 +1,7 @@
 
 public class BinarySearch {
     public static void main(String[] args) {
-        //数组
+           //数组
 		int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 		//要查找的元素
 		int key = 7;
